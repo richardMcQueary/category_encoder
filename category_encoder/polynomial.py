@@ -3,9 +3,9 @@
 import numpy as np
 import pandas as pd
 from patsy.contrasts import Poly
-from category_encoders.ordinal import OrdinalEncoder
+from category_encoder.ordinal import OrdinalEncoder
 from sklearn.base import BaseEstimator, TransformerMixin
-import category_encoders.utils as util
+import category_encoder.utils as util
 
 __author__ = 'willmcginnis'
 
@@ -35,7 +35,7 @@ class PolynomialEncoder(BaseEstimator, TransformerMixin):
 
     Example
     -------
-    >>> from category_encoders import *
+    >>> from category_encoder import *
     >>> import pandas as pd
     >>> from sklearn.datasets import load_boston
     >>> bunch = load_boston()
