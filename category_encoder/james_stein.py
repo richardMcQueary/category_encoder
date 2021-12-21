@@ -4,8 +4,8 @@ import pandas as pd
 import scipy
 from scipy import optimize
 from sklearn.base import BaseEstimator
-from category_encoders.ordinal import OrdinalEncoder
-import category_encoders.utils as util
+from category_encoder.ordinal import OrdinalEncoder
+import category_encoder.utils as util
 from sklearn.utils.random import check_random_state
 
 __author__ = 'Jan Motl'
@@ -88,7 +88,7 @@ class JamesSteinEncoder(BaseEstimator, util.TransformerWithTargetMixin):
 
     Example
     -------
-    >>> from category_encoders import *
+    >>> from category_encoder import *
     >>> import pandas as pd
     >>> from sklearn.datasets import load_boston
     >>> bunch = load_boston()
