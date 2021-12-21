@@ -1,8 +1,8 @@
 import copy
-from category_encoders import utils
+from category_encoder import utils
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.model_selection import StratifiedKFold
-import category_encoders as encoders
+import category_encoder as encoders
 import pandas as pd
 import numpy as np
 
@@ -30,10 +30,10 @@ class PolynomialWrapper(BaseEstimator, TransformerMixin):
 
     Example
     -------
-    >>> from category_encoders import *
+    >>> from category_encoder import *
     >>> import pandas as pd
     >>> from sklearn.datasets import load_boston
-    >>> from category_encoders.wrapper import PolynomialWrapper
+    >>> from category_encoder.wrapper import PolynomialWrapper
     >>> bunch = load_boston()
     >>> y = bunch.target
     >>> y = (y/10).round().astype(int)  # we create 6 artificial classes
