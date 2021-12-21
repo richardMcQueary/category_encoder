@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from codecs import open
 from os import path
-from category_encoders import __version__
+from category_encoder import __version__
 
 
 here = path.abspath(path.dirname(__file__))
@@ -11,13 +11,11 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='category_encoders',
+    name='category_encoder',
     version=__version__,
     description='A collection sklearn transformers to encode categorical variables as numeric',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/scikit-learn-contrib/category_encoders',
-    download_url='https://github.com/scikit-learn-contrib/category_encoders/tarball/' + __version__,
     license='BSD',
     classifiers=[
       'Development Status :: 3 - Alpha',
