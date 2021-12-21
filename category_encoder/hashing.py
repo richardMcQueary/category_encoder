@@ -3,7 +3,7 @@
 import sys
 import hashlib
 from sklearn.base import BaseEstimator, TransformerMixin
-import category_encoders.utils as util
+import category_encoder.utils as util
 import multiprocessing
 import pandas as pd
 import math
@@ -60,7 +60,7 @@ class HashingEncoder(BaseEstimator, TransformerMixin):
 
     Example
     -------
-    >>> from category_encoders.hashing import HashingEncoder
+    >>> from category_encoder.hashing import HashingEncoder
     >>> import pandas as pd
     >>> from sklearn.datasets import load_boston
     >>> bunch = load_boston()
