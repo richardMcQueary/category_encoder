@@ -3,7 +3,7 @@
 import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 
-import category_encoders as ce
+import category_encoder as ce
 
 __author__ = 'willmcginnis'
 
@@ -33,7 +33,7 @@ class BinaryEncoder(BaseEstimator, TransformerMixin):
 
     Example
     -------
-    >>> from category_encoders import *
+    >>> from category_encoder import *
     >>> import pandas as pd
     >>> from sklearn.datasets import load_boston
     >>> bunch = load_boston()
