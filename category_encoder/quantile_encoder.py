@@ -2,9 +2,9 @@
 __author__ = "david26694", "cmougan"
 
 import numpy as np
-from category_encoders.ordinal import OrdinalEncoder
+from category_encoder.ordinal import OrdinalEncoder
 from sklearn.base import BaseEstimator
-import category_encoders.utils as util
+import category_encoder.utils as util
 import pandas as pd
 from functools import reduce
 import operator
@@ -40,7 +40,7 @@ class QuantileEncoder(BaseEstimator, util.TransformerWithTargetMixin):
 
     Example
     -------
-    >>> from category_encoders import *
+    >>> from category_encoder import *
     >>> import pandas as pd
     >>> from sklearn.datasets import load_boston
     >>> bunch = load_boston()
