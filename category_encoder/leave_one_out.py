@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.base import BaseEstimator
-import category_encoders.utils as util
+import category_encoder.utils as util
 from sklearn.utils.random import check_random_state
 
 __author__ = 'hbghhy'
@@ -39,7 +39,7 @@ class LeaveOneOutEncoder(BaseEstimator, util.TransformerWithTargetMixin):
 
     Example
     -------
-    >>> from category_encoders import *
+    >>> from category_encoder import *
     >>> import pandas as pd
     >>> from sklearn.datasets import load_boston
     >>> bunch = load_boston()
