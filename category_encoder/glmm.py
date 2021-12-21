@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 from sklearn.base import BaseEstimator
 from sklearn.utils.random import check_random_state
-from category_encoders.ordinal import OrdinalEncoder
-import category_encoders.utils as util
+from category_encoder.ordinal import OrdinalEncoder
+import category_encoder.utils as util
 import statsmodels.formula.api as smf
 from statsmodels.genmod.bayes_mixed_glm import BinomialBayesMixedGLM as bgmm
 
@@ -57,7 +57,7 @@ class GLMMEncoder(BaseEstimator, util.TransformerWithTargetMixin):
 
     Example
     -------
-    >>> from category_encoders import *
+    >>> from category_encoder import *
     >>> import pandas as pd
     >>> from sklearn.datasets import load_boston
     >>> bunch = load_boston()
