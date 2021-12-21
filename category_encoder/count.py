@@ -3,7 +3,7 @@ from __future__ import division
 
 import numpy as np
 import pandas as pd
-import category_encoders.utils as util
+import category_encoder.utils as util
 
 from copy import copy
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -71,7 +71,7 @@ class CountEncoder(BaseEstimator, TransformerMixin):
         -------
         >>> import pandas as pd
         >>> from sklearn.datasets import load_boston
-        >>> from category_encoders import CountEncoder
+        >>> from category_encoder import CountEncoder
 
         >>> bunch = load_boston()
         >>> y = bunch.target
